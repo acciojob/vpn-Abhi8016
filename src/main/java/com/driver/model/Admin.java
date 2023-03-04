@@ -19,11 +19,6 @@ public class Admin {
     @OneToMany(mappedBy = "admin", cascade = CascadeType.ALL)
     private List<ServiceProvider> serviceProviders = new ArrayList<>();
 
-    public Admin(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
     public Admin() {
     }
 

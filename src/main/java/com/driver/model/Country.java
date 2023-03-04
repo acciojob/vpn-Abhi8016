@@ -23,11 +23,6 @@ public class Country {
     @OneToOne
     private User user;
 
-    public Country(CountryName countryName, String code) {
-        this.countryName = countryName;
-        this.code = code;
-    }
-
     public Country() {
     }
 
